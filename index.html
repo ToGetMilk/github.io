@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nourish & Thrive – Wellness & Nutrition Inspiration</title>
+  <title>Personal Wellness & Nutrition Inspiration</title>
   <meta name="description" content="Inspiring better wellness and nutrition habits | UK-based personal guidance and motivation"/>
   <style>
     :root {
-      --primary: #4a9568;    /* calm green */
+      --primary: #4a9568;     /* calm green */
       --dark: #2c3e50;
       --light: #f8f9fa;
       --gray: #6c757d;
@@ -23,50 +23,15 @@
       background: var(--primary);
       color: white;
       text-align: center;
-      padding: 5rem 1rem 4rem;
+      padding: 4rem 1rem 3rem;
     }
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.6rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       opacity: 0.95;
-    }
-    .hero {
-      position: relative;
-      height: 60vh;
-      min-height: 400px;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.35);
-      z-index: 1;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      padding: 2rem;
-    }
-    .hero h2 {
-      font-size: 3.2rem;
-      margin-bottom: 1rem;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-    }
-    .hero p {
-      font-size: 1.5rem;
-      font-style: italic;
-      text-shadow: 0 1px 6px rgba(0,0,0,0.5);
     }
     nav {
       background: #fff;
@@ -94,21 +59,13 @@
       padding: 2rem 1rem;
     }
     section {
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
     }
     h2 {
       color: var(--primary);
-      margin-bottom: 1.4rem;
-      font-size: 2.4rem;
+      margin-bottom: 1.2rem;
+      font-size: 2.2rem;
       text-align: center;
-    }
-    .feature-image {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin: 2rem 0;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     }
     .card {
       background: white;
@@ -156,39 +113,31 @@
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.95rem;
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
     .disclaimer {
       font-size: 0.9rem;
       max-width: 800px;
-      margin: 2.5rem auto;
-      padding: 1.2rem;
+      margin: 2rem auto;
+      padding: 1rem;
       background: #fff3cd;
       border: 1px solid #ffeeba;
       border-radius: 6px;
       color: #856404;
     }
     @media (max-width: 600px) {
-      header h1 { font-size: 2.4rem; }
-      .hero h2 { font-size: 2.4rem; }
-      .hero p { font-size: 1.2rem; }
+      header h1 { font-size: 2.2rem; }
       nav ul { flex-direction: column; }
       nav a { margin: 0.6rem 0; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Nourish & Thrive</h1>
-    <p>Eat well, live well, be well</p>
-  </header>
 
-  <div class="hero" style="background-image: url('images/nourish-bowl.jpg');">
-    <div class="hero-content">
-      <h2>Real Food • Real Wellness</h2>
-      <p>“Eat well, live well, be well”</p>
-    </div>
-  </div>
+  <header>
+    <h1>Personal Wellness & Nutrition Inspiration</h1>
+    <p>Simple, realistic steps toward feeling better every day</p>
+  </header>
 
   <nav>
     <ul>
@@ -209,9 +158,6 @@
 
     <section id="inspiration">
       <h2>Wellness & Nutrition Inspiration</h2>
-      
-      <img src="images/nourish-bowl.jpg" alt="Colourful nourishing buddha bowl with fresh vegetables, grains and protein" class="feature-image">
-
       <div class="card">
         <ul>
           <li>Building habits that last — not chasing perfection</li>
@@ -222,26 +168,29 @@
         </ul>
         <p style="margin-top:1.5rem;">Want personalised inspiration? Get in touch — I'd love to hear what you're working on.</p>
       </div>
-
-      <h2>Mindful Movement</h2>
-      <img src="images/hero-yoga.jpg" alt="Woman practicing yoga in a peaceful setting – downward dog pose" class="feature-image">
     </section>
 
     <section id="contact">
       <h2>Get in Touch</h2>
       <form action="https://formsubmit.co/your-email@gmail.com" method="POST">
         <!-- Replace your-email@gmail.com with your actual email -->
+
         <input type="hidden" name="_subject" value="New message from website">
         <input type="hidden" name="_next" value="https://yourusername.github.io/thanks.html"> <!-- optional thanks page -->
         <input type="hidden" name="_autoresponse" value="Thanks! I'll get back to you within 1-2 working days.">
+
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required placeholder="e.g. Alex Smith">
+
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" required placeholder="you@example.com">
+
         <label for="message">Message</label>
         <textarea id="message" name="message" required placeholder="Tell me a bit about what you're hoping to achieve or any questions you have..."></textarea>
+
         <button type="submit">Send Message</button>
       </form>
+
       <div class="disclaimer">
         <strong>Important – please read:</strong><br>
         The content on this website is for general information and inspiration only. I am not a registered dietitian, nutritionist, or medical professional. Nothing here constitutes medical, nutritional, or therapeutic advice, diagnosis, or treatment. Always consult your GP or a qualified healthcare professional before making significant changes to your diet, exercise, or lifestyle — especially if you have any health conditions. You use any ideas at your own risk. No client relationship is created by contacting me or using this site.
@@ -250,7 +199,8 @@
   </main>
 
   <footer>
-    <p>© 2026 Nourish & Thrive • UK Sole Trader • <a href="#contact" style="color:#aaa;">Contact</a></p>
+    <p>&copy; 2026 Personal Wellness & Nutrition Inspiration • UK Sole Trader • <a href="#contact" style="color:#aaa;">Contact</a></p>
   </footer>
+
 </body>
 </html>
