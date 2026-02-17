@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Wellness & Nutrition Inspiration</title>
+  <meta name="description" content="Inspiring better wellness and nutrition habits | UK-based personal guidance and motivation"/>
+  <style>
+    :root {
+      --primary: #4a9568;     /* calm green */
+      --dark: #2c3e50;
+      --light: #f8f9fa;
+      --gray: #6c757d;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--light);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: var(--dark);
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 500;
+    }
+    nav a:hover { color: var(--primary); }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1.2rem;
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.8rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #ced4da;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    textarea { height: 140px; resize: vertical; }
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.9rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover { background: #3e8059; }
+    footer {
+      background: var(--dark);
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+      margin-top: 3rem;
+    }
+    .disclaimer {
+      font-size: 0.9rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
+      border-radius: 6px;
+      color: #856404;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      nav ul { flex-direction: column; }
+      nav a { margin: 0.6rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Personal Wellness & Nutrition Inspiration</h1>
+    <p>Simple, realistic steps toward feeling better every day</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#inspiration">Inspiration</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I'm a UK-based sole trader passionate about helping people discover sustainable wellness and better everyday nutrition. I share practical inspiration, ideas, and gentle motivation — not medical advice or prescribed diets.</p>
+        <p>Everything here is about small, realistic changes that fit real life. No gimmicks, no quick fixes.</p>
+      </div>
+    </section>
+
+    <section id="inspiration">
+      <h2>Wellness & Nutrition Inspiration</h2>
+      <div class="card">
+        <ul>
+          <li>Building habits that last — not chasing perfection</li>
+          <li>Simple meal ideas using everyday ingredients</li>
+          <li>Mindful eating without obsession</li>
+          <li>Moving your body in ways that feel good</li>
+          <li>Connecting food, mood and energy</li>
+        </ul>
+        <p style="margin-top:1.5rem;">Want personalised inspiration? Get in touch — I'd love to hear what you're working on.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <form action="https://formsubmit.co/4ipad@protonmail.com" method="POST">
+        <!-- Replace your-email@gmail.com with your actual email -->
+
+        <input type="hidden" name="_subject" value="New message from website">
+        <input type="hidden" name="_next" value="https://yourusername.github.io/thanks.html"> <!-- optional thanks page -->
+        <input type="hidden" name="_autoresponse" value="Thanks! I'll get back to you within 1-2 working days.">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="e.g. Alex Smith">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Tell me a bit about what you're hoping to achieve or any questions you have..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="disclaimer">
+        <strong>Important – please read:</strong><br>
+        The content on this website is for general information and inspiration only. I am not a registered dietitian, nutritionist, or medical professional. Nothing here constitutes medical, nutritional, or therapeutic advice, diagnosis, or treatment. Always consult your GP or a qualified healthcare professional before making significant changes to your diet, exercise, or lifestyle — especially if you have any health conditions. You use any ideas at your own risk. No client relationship is created by contacting me or using this site.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Personal Wellness & Nutrition Inspiration • UK Sole Trader • <a href="#contact" style="color:#aaa;">Contact</a></p>
+  </footer>
+
+</body>
+</html>
